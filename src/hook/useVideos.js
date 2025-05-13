@@ -18,7 +18,7 @@ const useVideos = () => {
   const [filtered, setFiltered] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
-
+  
   useEffect(() => {
     //  Fetch videos from the API and categorize them.
     const fetchVideos = async () => {
