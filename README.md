@@ -3,6 +3,10 @@
 This is the React frontend of the YouTube Clone application, built with Vite, Redux, and Tailwind CSS.
 
 ---
+## live video demo
+- [live video demo google drive link](https://drive.google.com/file/d/1SyE613ujzAk7ZCsOLWbPXfx74hEX-UMs/view?usp=drive_link)
+
+---
 
 ## Git Repositories
 
