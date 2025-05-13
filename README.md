@@ -9,7 +9,9 @@ This is the React frontend of the YouTube Clone application, built with Vite, Re
 - [Frontend Github Repo](https://github.com/itsakshay-git/youtube_clone_frontend)
 
 ---
+
 ## live link for Demo
+
 - [live link](https://youtube-clone-frontend-indol.vercel.app/)
 
 ---
@@ -19,7 +21,35 @@ This is the React frontend of the YouTube Clone application, built with Vite, Re
 ![Screenshot 2025-05-13 174606](https://github.com/user-attachments/assets/9e5cd449-66a4-4732-8d29-97ff06dbe239)
 ![Screenshot 2025-05-13 191311](https://github.com/user-attachments/assets/e696e691-a4fd-4e4d-8cf3-58d43f70c0ea)
 
-----
+---
+
+## Features
+
+- 🔐 Auth (Register/Login)
+- 📺 Video Upload, Playback
+- 📁 Playlists & Watch Later
+- 🧠 Video History
+- 📦 Channel Management
+- 🧾 Commenting System
+- 🔍 Search with Suggestions
+- ❤️ Like/Dislike, Subscribe
+- 📊 Redux State Management
+- 🌩️ Cloudinary for Image/Video Storage
+
+---
+
+## Usage
+
+- Explore videos on the home page
+- Register or Login to upload videos and comment
+- Create and manage your own channel
+- Subscribe to other channels
+- Like/Dislike videos
+- Save videos to playlists or watch later
+- View your watch history and liked videos
+- Search for content with real-time suggestions
+
+---
 
 ## 📁 Folder Structure
 
