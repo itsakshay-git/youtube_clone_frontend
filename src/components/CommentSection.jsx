@@ -102,7 +102,7 @@ function CommentSection({ video, setVideo }) {
   };
 
   return (
-    <div className="mt-6 p-6">
+    <div className="mt-6 p-3 sm:p-6">
       <div className="flex items-center gap-5 mb-4">
         <h3 className="font-semibold text-lg">
           {video?.comments?.length || 0} Comments

@@ -52,6 +52,8 @@ if (!video) return <p>Loading...</p>;
       <div className="flex-1">
         <VideoPlayer video={video} />
 
+          <CommentSection video={video} setVideo={setVideo} />
+
         {/* Mobile Suggestions */}
         <div className="block md:hidden my-4">
           <SuggestedVideos
@@ -60,8 +62,6 @@ if (!video) return <p>Loading...</p>;
             onSelect={handleVideoSelect}
           />
         </div>
-
-        <CommentSection video={video} setVideo={setVideo} />
       </div>
 
       {/*======= Desktop Sidebar Suggestions ========*/}

@@ -95,7 +95,7 @@ function Header() {
   return (
     <header className="flex justify-between items-center p-2 px-4 z-50 bg-white relative">
       {/* LEFT SECTION */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
         {/* Sidebar toggle button */}
         <button
           onClick={handleToggle}
@@ -111,10 +111,10 @@ function Header() {
             isMobileSearchOpen ? "hidden" : "block"
           }`}
         >
-          <img src="/youtube.png" className="h-8 w-8" alt="logo" />
-          <h1 className="text-sm md:text-base lg:text-lg font-semibold hidden sm:block">
+          <img src="/YouTube_logo.png" className="w-20" alt="logo" />
+          {/* <h1 className="text-sm md:text-base lg:text-lg font-semibold hidden sm:block">
             YouTube Clone
-          </h1>
+          </h1> */}
         </Link>
       </div>
 
@@ -126,12 +126,12 @@ function Header() {
         </div>
 
         {/* Mobile search icon */}
-        <button
+        {/* <button
           onClick={() => setIsMobileSearchOpen(true)}
           className="md:hidden ml-auto mx-5"
         >
           {!isMobileSearchOpen && <Search size={20} />}
-        </button>
+        </button> */}
 
         {/* Mobile search bar + back button */}
         {isMobileSearchOpen && (
@@ -150,6 +150,15 @@ function Header() {
       </div>
 
       {/* RIGHT SECTION */}
+      <div className="flex justify-center items-center">
+        {/* Mobile search icon */}
+        <button
+          onClick={() => setIsMobileSearchOpen(true)}
+          className="md:hidden ml-auto mx-5"
+        >
+          {!isMobileSearchOpen && <Search size={20} />}
+        </button>
+
       {user && (
         <div className="flex items-center gap-3 relative">
           {/* CREATE DROPDOWN */}
@@ -239,7 +248,7 @@ function Header() {
           )}
         </div>
       )}
-      {!user && (
+      {!user && !isMobileSearchOpen && (
         <div className="flex gap-2 justify-center items-center">
           <BsThreeDotsVertical />
           <button
@@ -250,6 +259,7 @@ function Header() {
           </button>
         </div>
       )}
+      </div>
     </header>
   );
 }

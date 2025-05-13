@@ -89,12 +89,12 @@ function VideoPlayer({ video }) {
 
   return (
     <div className="p-2 sm:p-6">
-      <div className="aspect-w-16 aspect-h-9 mb-4 sm:h-[450px] rounded-lg overflow-hidden">
+      <div className="w-full mb-4 rounded-lg overflow-hidden aspect-video sm:aspect-auto sm:h-[450px]">
         {isYouTube && youTubeId ? (
           <iframe
             src={`https://www.youtube.com/embed/${youTubeId}?autoplay=1&mute=0`}
             title={video.title}
-            className="w-full sm:h-full rounded-lg"
+            className="w-full h-full rounded"
             allow="autoplay"
             allowFullScreen
           />
@@ -117,7 +117,7 @@ function VideoPlayer({ video }) {
                 <img
                   src={channelInfo.channelImage}
                   alt={channelInfo.channelName}
-                  className="w-12 h-12 md:w-8 md:h-8 sm:w-10 sm:h-10 lg:w-10 lg:h-10 rounded-full"
+                  className="w-10 h-10 md:w-8 md:h-8 sm:w-10 sm:h-10 lg:w-10 lg:h-10 rounded-full"
                 />
               ) : (
                 getInitialsAvatar(channelInfo.channelName)
@@ -144,7 +144,7 @@ function VideoPlayer({ video }) {
         )}
 
         <div className="flex items-center justify-center space-x-4">
-          <div className="flex items-center space-x-2 py-2 rounded-xl">
+          <div className="flex items-center gap-2 justify-between w-full space-x-2 py-2 rounded-xl">
             <div className="flex p-1 sm:p-2 md:py-2 lg:p-2 backdrop-blur-sm bg-black/5 rounded-full h-8 sm:h-10 md:h-8 lg:h-10">
               <button
                 onClick={() => requireAuth(handleLike)}
