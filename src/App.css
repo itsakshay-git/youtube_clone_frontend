@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Custom thin scrollbar */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Adjust width */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #666768; /* Tailwind gray-300 */
+  border-radius: 10px;
+}
