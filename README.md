@@ -54,7 +54,7 @@ This is the React frontend of the YouTube Clone application, built with Vite, Re
 ## 📁 Folder Structure
 
 ```
-frontend/
+youtube_clone_frontend/
 ├── public/
 ├── src/
 │   ├── components/
@@ -145,7 +145,7 @@ frontend/
 ## ⚙️ Local Setup
 
 ```bash
-cd frontend
+cd youtube_clone_frontend
 npm install
 npm run dev
 ```
