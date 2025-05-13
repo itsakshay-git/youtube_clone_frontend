@@ -12,6 +12,7 @@ This is the React frontend of the YouTube Clone application, built with Vite, Re
 ## Screenshot
 
 ![Screenshot 2025-05-13 174606](https://github.com/user-attachments/assets/9e5cd449-66a4-4732-8d29-97ff06dbe239)
+![Screenshot 2025-05-13 191311](https://github.com/user-attachments/assets/e696e691-a4fd-4e4d-8cf3-58d43f70c0ea)
 
 ----
 
