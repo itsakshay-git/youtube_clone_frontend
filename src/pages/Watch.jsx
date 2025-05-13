@@ -44,7 +44,14 @@ function Watch() {
 } = useWatchPage();
 
 // Display loading message until the video is loaded
-if (!video) return <p>Loading...</p>;
+if (!video) {
+  return (
+    <div className="w-full h-full flex justify-center items-center">
+      <div className="w-[50%] h-[50%] shadow-2xl rounded-3xl flex justify-center items-center text-black">
+        <p>Loading...</p>
+      </div>
+    </div>
+)};
 
   return (
     <div className="w-full max-w-[1350px] mx-auto px-0 md:px-4 lg:px-6">
