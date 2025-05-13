@@ -71,7 +71,14 @@ function EditChannel() {
   
   
 
-  if (!channel) return <div className="p-4">Loading...</div>;
+  if (!channel){
+      return (
+    <div className="w-full h-full flex justify-center items-center">
+      <div className="w-[50%] h-[50%] shadow-2xl rounded-3xl flex justify-center items-center text-black">
+        <p>Loading...</p>
+      </div>
+    </div>
+)};
 
   return (
   <div className="p-6">
