@@ -142,6 +142,19 @@ youtube_clone_frontend/
 
 ---
 
+### Set up MongoDB Locally for backend database
+
+- Download MongoDB and install MongoDB Compass: [https://www.mongodb.com/products/self-managed/community-edition](https://www.mongodb.com/products/self-managed/community-edition)
+- Start MongoDB Server
+- Open MongoDB Compass
+- Connect using:
+
+```
+mongodb://localhost:27017/youtube_clone
+```
+
+---
+
 ## ⚙️ Local Setup
 
 ```bash
